@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 1</title>
+</head>
+<body>
+    <h1>Land Of Boxes Order Form</h1>
+
+    Name:
+    <input type="text" required pattern="[A-Za-z/s]">
+    <br><br>
+
+    Email:
+    <input type="email" required pattern="{,30}">
+    <br><br>
+
+    Address:
+    <textarea cols="30" rows="8"></textarea>
+    <br><br>
+
+    Postcode:
+    <input type="number" min="6" max="8">
+    <br><br>
+
+    <table border="1">
+        <tr>
+            <th>Product</th>
+            <th>Part Number</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Subtotal</th>
+        </tr>
+
+        <tr>
+            <td>EconoBox</td>
+            <td>LB100</td>
+            <td>3</td>
+            <td>R5</td>
+            <td>R15</td>
+        </tr>
+
+        <tr>
+            <td>Standard Box</td>
+            <td>LB200</td>
+            <td>4</td>
+            <td>R10</td>
+            <td>R40</td>
+        </tr>
+
+        <tr>
+            <td>Premium BoxTD></td>
+            <td>LB300</td>
+            <td>1</td>
+            <td>R15</td>
+            <td>R15</td>
+        </tr>
+
+        <tr>
+            <td>Deluxe BoxTD></td>
+            <td>LB400</td>
+            <td>0</td>
+            <td>R20</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Super Deluxe BoxTD></td>
+            <td>LB500</td>
+            <td>1</td>
+            <td>R30</td>
+            <td>R30</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">Total</td>
+            <td>R100</td>
+        </tr>
+    </table>
+    <br>
+
+    <p><strong>Credit Card Details</strong></p>
+    Card Type: <br>
+
+    <input type="radio" name="Op" id="MC" checked> Mastercard  &emsp; &emsp;
+    Card Number: <input type="number"> <br> <br>
+    <input type="radio" name="Op" id="V"> Visa &emsp; &emsp; &emsp; &emsp; &emsp;
+    Expiry date: <input type="number"> <br> <br>
+    <input type="radio" name="Op" id="AE"> American Express <br> <br>
+    <input type="radio" name="Op" id="DC"> Diners Club <br> <br>
+
+    <p><strong>Delivery Address</strong></p>
+    <textarea cols="30" rows="8"></textarea> 
+    <br><br>
+
+    <input type="button" value="Send Order">
+    <input type="button" value="Clear Form">
+</body>
+</html>
